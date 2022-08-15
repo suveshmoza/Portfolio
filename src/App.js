@@ -1,11 +1,14 @@
 import React from 'react';
-import { Header, Navbar } from './components';
+import { Header, Navbar, About, Skills, Projects } from './components';
 const App = () => {
 	return (
-		<>
+		<div>
 			<Navbar />
 			<Header />
-		</>
+			<Skills />
+			<Projects />
+			<About />
+		</div>
 	);
 };
 
