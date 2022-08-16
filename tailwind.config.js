@@ -5,6 +5,11 @@ module.exports = {
 		extend: {
 			colors: {
 				'custom-blue': '#00a4ff',
+				gold: '#ffd700',
+				wood: '#502900',
+				linkedin: '#0072b1',
+				twitter: '#00acee',
+				instagram: '#fb3958',
 			},
 		},
 	},

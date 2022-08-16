@@ -1,5 +1,13 @@
 import React from 'react';
-import { Header, Navbar, About, Skills, Projects } from './components';
+import {
+	Header,
+	Navbar,
+	About,
+	Skills,
+	Projects,
+	Achievement,
+	Footer,
+} from './components';
 const App = () => {
 	return (
 		<div>
@@ -7,7 +15,9 @@ const App = () => {
 			<Header />
 			<Skills />
 			<Projects />
+			<Achievement />
 			<About />
+			<Footer />
 		</div>
 	);
 };

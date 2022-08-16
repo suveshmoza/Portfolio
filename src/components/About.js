@@ -16,7 +16,7 @@ const About = () => {
 					<h2 className="text-2xl sm:text-6xl text-center font-bold">
 						About <span className="text-custom-blue">Me</span>
 					</h2>
-					<p className="py-3 max-w-md text-lg text-justify">
+					<p className="py-3 max-w-md font-semibold text-lg text-justify">
 						I'm from Jammu and Kashmir, India. I'm currently a final year
 						student at Univeristy Institute of Engineering and Technology
 						Kurukshetra pursuing my Bachelors of Technology in Computer Science

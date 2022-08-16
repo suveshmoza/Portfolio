@@ -3,13 +3,13 @@ import Hero from '../assests/images/hero.svg';
 
 const Header = () => {
 	return (
-		<header className="h-screen w-full">
+		<header className="h-screen w-full ">
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div className="flex flex-col justify-center h-full px-1">
 					<h2 className="text-3xl sm:text-6xl font-bold">
 						Hi all, I'm <span className="text-custom-blue">Suvesh Moza</span>
 					</h2>
-					<p className="py-3 max-w-md">
+					<p className="py-3 max-w-md font-semibold">
 						A passionate Web Developer having an experience of building
 						Full-Stack web applications with JavaScript.
 					</p>
