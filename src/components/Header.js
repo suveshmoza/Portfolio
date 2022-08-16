@@ -3,7 +3,10 @@ import Hero from '../assests/images/hero.svg';
 
 const Header = () => {
 	return (
-		<header name="main" className="h-screen w-full dark:bg-gray-900">
+		<header
+			name="main"
+			className="h-screen w-full dark:bg-gray-900 dark:text-white"
+		>
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div className="flex flex-col justify-center h-full px-1">
 					<h2 className="text-3xl sm:text-6xl font-bold">

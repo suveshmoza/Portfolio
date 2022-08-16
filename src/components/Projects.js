@@ -43,7 +43,10 @@ const Projects = () => {
 	];
 
 	return (
-		<div name="Projects" className="w-full">
+		<div
+			name="Projects"
+			className="w-full pb-10 dark:bg-gray-900 dark:text-white"
+		>
 			<div className="max-w-screen-lg mx-auto h-5/6 md:h-full px-2 ">
 				<h2 className="text-2xl md:text-6xl font-bold text-center p-2">
 					Pro<span className="text-custom-blue">j</span>ects

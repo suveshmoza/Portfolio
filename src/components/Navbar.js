@@ -15,7 +15,7 @@ const Navbar = () => {
 	const [nav, setNav] = useState(false);
 
 	return (
-		<nav className="flex dark:bg-gray-800 justify-between items-center w-full h-20 px-4 fixed">
+		<nav className="flex bg-slate-100  dark:bg-gray-800 dark:text-white justify-between items-center w-full h-20 px-4 fixed">
 			<div>
 				<Link
 					to="main"
@@ -43,12 +43,12 @@ const Navbar = () => {
 			</div>
 			<div
 				onClick={() => setNav(!nav)}
-				className="cursor-pointer pr-4 z-10 text-black md:hidden"
+				className="cursor-pointer pr-4 z-10 text-black dark:text-white md:hidden"
 			>
 				{nav ? <FaTimes size={30} /> : <FaBars size={30} />}
 			</div>
 			{nav && (
-				<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white md:hidden">
+				<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white md:hidden dark:bg-gray-900 dark:text-white	">
 					{navLinks.map(({ id, link }) => (
 						<li
 							key={id}

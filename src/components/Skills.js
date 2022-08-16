@@ -17,7 +17,10 @@ const icons = [
 
 const Skills = () => {
 	return (
-		<div name="Skills" className="h-screen w-full ">
+		<div
+			name="Skills"
+			className="h-screen w-full bg-slate-100 dark:bg-gray-900 dark:text-white"
+		>
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div>
 					<img

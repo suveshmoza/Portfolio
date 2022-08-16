@@ -3,7 +3,10 @@ import AboutImg from '../assests/images/about.svg';
 
 const About = () => {
 	return (
-		<div name="About" className="h-screen w-full ">
+		<div
+			name="About"
+			className="h-screen w-full dark:bg-gray-900 dark:text-white"
+		>
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div>
 					<img

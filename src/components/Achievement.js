@@ -4,7 +4,10 @@ import AchievementList from './AchievementList';
 
 const Achievement = () => {
 	return (
-		<div name="Achievements" className="p-2 my-8 w-full md:h-screen md:my-0">
+		<div
+			name="Achievements"
+			className=" w-full md:h-screen md:my-0 bg-slate-100 dark:bg-gray-900 dark:text-white"
+		>
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div className="flex flex-col justify-center h-full px-1">
 					<h2 className="text-2xl sm:text-6xl font-bold text-center">

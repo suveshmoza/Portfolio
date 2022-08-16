@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ imgUrl, title, liveLink, githubLink }) => {
 	return (
-		<div className="max-w-sm rounded-lg overflow-hidden shadow-xl ">
+		<div className="max-w-sm rounded-lg overflow-hidden shadow-lg	dark:shadow-custom-blue ">
 			<img className="w-full" src={imgUrl} alt="project photo" />
 			<div className="text-center font-bold text-xl  py-4">{title}</div>
 			<div className="flex justify-center items-center md:text-center md:px-3">
