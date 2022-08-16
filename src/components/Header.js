@@ -3,7 +3,7 @@ import Hero from '../assests/images/hero.svg';
 
 const Header = () => {
 	return (
-		<header className="h-screen w-full ">
+		<header name="main" className="h-screen w-full dark:bg-gray-900">
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div className="flex flex-col justify-center h-full px-1">
 					<h2 className="text-3xl sm:text-6xl font-bold">
@@ -14,9 +14,14 @@ const Header = () => {
 						Full-Stack web applications with JavaScript.
 					</p>
 					<div className="text-center md:text-left">
-						<button className="bg-transparent hover:bg-custom-blue text-custom-blue font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+						<a
+							href="https://drive.google.com/file/d/1WIyyVKp9UJaSqJlw_sMnNF0LelAFIe1o/view"
+							className="bg-transparent cursor-pointer hover:bg-custom-blue text-custom-blue font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							My Resume
-						</button>
+						</a>
 					</div>
 				</div>
 				<div>

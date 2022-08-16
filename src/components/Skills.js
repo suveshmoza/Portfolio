@@ -11,12 +11,13 @@ const icons = [
 	{ iconClass: 'fa-brands fa-node p-2', color: '3C873A' },
 	{ iconClass: 'fa-solid fa-database p-2', color: '3C873A' },
 	{ iconClass: 'fa-brands fa-git-alt p-2', color: 'F1502F' },
+	{ iconClass: 'fa-brands fa-github p-2', color: '000' },
 	{ iconClass: 'fa-brands fa-ethereum p-2', color: '8b8b8b' },
 ];
 
 const Skills = () => {
 	return (
-		<div className="h-screen w-full ">
+		<div name="Skills" className="h-screen w-full ">
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-5/6 md:h-full px-2 md:flex-row">
 				<div>
 					<img

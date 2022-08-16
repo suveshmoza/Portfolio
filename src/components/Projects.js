@@ -43,12 +43,12 @@ const Projects = () => {
 	];
 
 	return (
-		<div className="pb-4 w-full">
+		<div name="Projects" className="w-full">
 			<div className="max-w-screen-lg mx-auto h-5/6 md:h-full px-2 ">
-				<h2 className="text-2xl md:text-6xl font-bold text-center">
+				<h2 className="text-2xl md:text-6xl font-bold text-center p-2">
 					Pro<span className="text-custom-blue">j</span>ects
 				</h2>
-				<div className="grid grid-cols-1 gap-5 md:grid-cols-3  p-4">
+				<div className="grid grid-cols-1 gap-4 md:grid-cols-3">
 					{projects.map(({ title, imgUrl, liveLink, githubLink }) => (
 						<Card
 							title={title}

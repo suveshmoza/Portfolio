@@ -1,35 +1,44 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
+import Switcher from './Switcher';
 
 const navLinks = [
-	{ id: 1, name: 'Skills' },
-	{ id: 2, name: 'Projects' },
-	{ id: 3, name: 'Achievements' },
-	{ id: 4, name: 'About' },
-	{ id: 5, name: 'Github' },
-	{ id: 6, name: 'Contact Me' },
+	{ id: 1, link: 'Skills' },
+	{ id: 2, link: 'Projects' },
+	{ id: 3, link: 'Achievements' },
+	{ id: 4, link: 'About' },
+	{ id: 6, link: 'Contact Me' },
 ];
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 
 	return (
-		<div className="flex bg-neutral-100 justify-between items-center w-full h-20 px-4 fixed">
+		<nav className="flex dark:bg-gray-800 justify-between items-center w-full h-20 px-4 fixed">
 			<div>
-				<a href="#" className="font-medium text-2xl">
+				<Link
+					to="main"
+					smooth
+					duration={500}
+					className="cursor-pointer font-medium text-2xl"
+				>
 					Suvesh Moza
-				</a>
+				</Link>
 			</div>
 			<div>
 				<ul className="hidden  md:flex">
-					{navLinks.map(({ id, name }) => (
+					{navLinks.map(({ id, link }) => (
 						<li
 							key={id}
 							className="mx-1 px-3 py-1 text-lg font-medium hover:text-custom-blue"
 						>
-							<a href="#">{name}</a>
+							<Link className="cursor-pointer" to={link} smooth duration={500}>
+								{link}
+							</Link>
 						</li>
 					))}
+					<Switcher />
 				</ul>
 			</div>
 			<div
@@ -40,17 +49,25 @@ const Navbar = () => {
 			</div>
 			{nav && (
 				<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white md:hidden">
-					{navLinks.map(({ id, name }) => (
+					{navLinks.map(({ id, link }) => (
 						<li
 							key={id}
 							className="px-4 cursor-pointer capitalize py-4 text-xl hover:text-custom-blue"
 						>
-							<a href="#">{name}</a>
+							<Link
+								onClick={() => setNav(!nav)}
+								to={link}
+								smooth
+								duration={500}
+							>
+								{link}
+							</Link>
 						</li>
 					))}
+					<Switcher />
 				</ul>
 			)}
-		</div>
+		</nav>
 	);
 };
 

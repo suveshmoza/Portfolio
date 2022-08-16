@@ -2,10 +2,10 @@ import React from 'react';
 
 const Card = ({ imgUrl, title, liveLink, githubLink }) => {
 	return (
-		<div className="max-w-sm rounded-lg overflow-hidden shadow-2xl ">
+		<div className="max-w-sm rounded-lg overflow-hidden shadow-xl ">
 			<img className="w-full" src={imgUrl} alt="project photo" />
-			<div className="text-center font-bold text-xl mb-2 py-4">{title}</div>
-			<div className="flex justify-center items-center md:text-center md:px-4">
+			<div className="text-center font-bold text-xl  py-4">{title}</div>
+			<div className="flex justify-center items-center md:text-center md:px-3">
 				<a
 					className="inline-block bg-gray-200 rounded px-6 py-2 md:px-8 text-xs font-semibold text-gray-700 mr-2 mb-3"
 					target="_blank"
